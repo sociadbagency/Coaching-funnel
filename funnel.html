@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Coaching Funnel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #ffffff;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin: 0;
+      color: #e8c17d;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-top: 15px;
+      opacity: 0.85;
+    }
+    .cta-btn {
+      margin-top: 30px;
+      padding: 16px 32px;
+      background: #e8c17d;
+      color: #111;
+      font-size: 20px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #e8c17d;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .card {
+      background: #141414;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #2a2a2a;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+    .cta-btn {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .cta-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(232,193,125,0.35);
+    }
+    .card {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s forwards;
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  .card:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+    }
+
+</style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Get 15–30 Qualified Clients Monthly</h1>
+    <p>Fully done-for-you ads, funnel, and automation. You only handle the coaching.</p>
+    <button class="cta-btn" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">Book Your Free Strategy Session</button>
+  </div>
+
+  <div class="section" id="booking">
+    <h2>What You Get</h2>
+
+    <div class="card">
+      <h3>🔥 High-Converting Landing Page</h3>
+      <p>Premium design built to turn cold visitors into booked calls.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Targeted Ads to Ready-to-Buy Clients</h3>
+      <p>We only target people already showing intent — no wasted spend.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Automated Follow-Up</h3>
+      <p>Instant email + SMS follow-up sequences that increase call show-up rates.</p>
+    </div>
+
+    <div class="card">
+      <h3>📈 Daily Optimization</h3>
+      <p>Your system is monitored and improved every single day for maximum ROI.</p>
+    </div>
+  </div>
+
+  <div class="section" id="form">
+    <h2>Book a Free Strategy Session</h2>
+    <div class="card">
+      <p>Name:</p>
+      <input style="width:100%;padding:12px;border-radius:6px;border:none;background:#1e1e1e;color:#fff" />
+      <p style="margin-top:15px;">Email:</p>
+      <input style="width:100%;padding:12px;border-radius:6px;border:none;background:#1e1e1e;color:#fff" />
+      <p style="margin-top:15px;">Your Goal:</p>
+      <textarea style="width:100%;height:100px;padding:12px;border-radius:6px;border:none;background:#1e1e1e;color:#fff"></textarea>
+      <button class="cta-btn" style="margin-top:20px;width:100%">Submit</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 Premium Coaching Systems. All Rights Reserved.
+  </div>
+</body>
+</html>
